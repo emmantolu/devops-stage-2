@@ -29,14 +29,16 @@ These are sufficient to deploy the stack locally. For cloud deployment, follow t
 
 ## Instructions
 
-1. **Build and start services**
+1. **Build and start services**:
+
    After cloning this repository, build the services by running:
-   
-      ```sh
+  ```sh
    docker compose up -d
-   ```
+  ```
+
 2. **Confirm services**
-   - ```sh
-     curl localhost
-     ``` should produce a HTML response that Nginx proxy manager is successfully installed
+   ```sh
+   curl localhost
+   ```
+   should produce a HTML response that Nginx proxy manager is successfully installed
 
