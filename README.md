@@ -18,3 +18,25 @@ To get started with this template, please follow the instructions in the respect
 - [Frontend README](./frontend/README.md)
 - [Backend README](./backend/README.md)
 
+These are sufficient to deploy the stack locally. For cloud deployment, follow the instructions below.
+
+## Containerize application
+
+## Prerequisites
+
+- Docker
+- Docker Compose
+
+## Instructions
+
+1. **Build and start services**
+   After cloning this repository, build the services by running:
+   
+      ```sh
+   docker compose up -d
+   ```
+2. **Confirm services**
+   - ```sh
+     curl localhost
+     ``` should produce a HTML response that Nginx proxy manager is successfully installed
+
