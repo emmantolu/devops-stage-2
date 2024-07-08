@@ -1,1 +1,24 @@
+    server {
+        listen 80;
+        server_name raven.cloudranger.net;
 
+        location / {
+            proxy_pass http://frontend;
+        }
+
+        location /api {
+            proxy_pass http://backend/api;
+        }
+
+        location /docs {
+            proxy_pass http://backend/docs;
+        }
+
+        location /redoc {
+            proxy_pass http://backend/redoc;
+        }
+        
+        location /proxy {
+            proxy_pass http://proxy_manager;
+        }
+    }
