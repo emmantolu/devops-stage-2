@@ -1,16 +1,16 @@
-# Use latest Node.js official image as base
+# Use the latest official Node.js image as a base
 FROM node:latest
 
-# Set working directory
+# Set the working directory
 WORKDIR /app
 
-# Copy all application files
+# Copy the application files
 COPY . .
 
 # Install dependencies
 RUN npm install
 
-# Expose server port
+# Expose the port the development server runs on
 EXPOSE 5173
 
 # Run the development server
